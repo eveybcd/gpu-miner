@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\sph">
+      <UniqueIdentifier>{8ff97542-2c8c-456f-9b09-ff1e3910e80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sph">
+      <UniqueIdentifier>{7bfc5c04-e7b8-4d6c-973c-2a0ed07b2a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ocl">
+      <UniqueIdentifier>{ab693ca5-5746-44aa-8fd8-5291a2b5a766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ocl">
+      <UniqueIdentifier>{bd01bdbc-b9ea-446c-93d5-b5199bf47835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algorithm">
+      <UniqueIdentifier>{ab073c91-df9c-4d43-86e8-1469a8ff1571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\algorithm">
+      <UniqueIdentifier>{8cc454ef-b019-4f41-bb22-2dd8941888c8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\adl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\driver-opencl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\findnonce.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hexdump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logging.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sgminer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccan\opt\opt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccan\opt\parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccan\opt\usage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccan\opt\helpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\aes_helper.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\blake.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\bmw.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\cubehash.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\echo.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\fugue.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\groestl.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\hamsi.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\hamsi_helper.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\jh.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\keccak.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\sha2.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\sha2big.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\shavite.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\simd.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\skein.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ocl\binary_kernel.c">
+      <Filter>Source Files\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ocl\build_kernel.c">
+      <Filter>Source Files\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\algorithm\scrypt.c">
+      <Filter>Source Files\algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config_parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\shabal.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\whirlpool.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ocl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\algorithm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\events.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\algorithm\bcd.c">
+      <Filter>Source Files\algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\sm3.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\sha256_Y.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\ripemd.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sph\gost.c">
+      <Filter>Source Files\sph</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\adl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\arg-nonnull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bench_block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c++defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\driver-opencl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\elist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\findnonce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\miner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ocl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uthash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\warn-on-use.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dist\include\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dist\include\winbuild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_types.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_skein.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_simd.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_shavite.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_sha2.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_keccak.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_jh.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_hamsi.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_groestl.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_fugue.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_echo.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_cubehash.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_bmw.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_blake.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ocl\binary_kernel.h">
+      <Filter>Header Files\ocl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ocl\build_kernel.h">
+      <Filter>Header Files\ocl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\algorithm\scrypt.h">
+      <Filter>Header Files\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_whirlpool.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_shabal.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sha256_Y.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\algorithm\bcd.h">
+      <Filter>Header Files\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_sm3.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_ripemd.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sph\sph_gost.h">
+      <Filter>Header Files\sph</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.txt" />
+  </ItemGroup>
+</Project>

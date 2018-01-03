@@ -1,0 +1,60 @@
+
+ACLOCAL_AMFLAGS = -I m4
+
+JANSSON_CPPFLAGS= -I$(top_builddir)/submodules/jansson/src -I$(top_srcdir)/submodules/jansson/src
+
+EXTRA_DIST	= example.conf m4/gnulib-cache.m4 \
+		  ADL_SDK/readme.txt api-example.php miner.php	\
+		  API.class API.java api-example.c hexdump.c \
+		  doc/API doc/FAQ doc/GPU doc/SCRYPT doc/windows-build.txt
+
+SUBDIRS		= lib submodules ccan sph
+
+bin_PROGRAMS     = sgminer
+
+sgminer_CPPFLAGS = $(PTHREAD_FLAGS) -std=gnu99 $(JANSSON_CPPFLAGS)
+sgminer_LDFLAGS  = $(PTHREAD_FLAGS)
+sgminer_LDADD    = $(DLOPEN_FLAGS) @LIBCURL_LIBS@ @JANSSON_LIBS@ @PTHREAD_LIBS@ \
+		  @OPENCL_LIBS@ @NCURSES_LIBS@ @PDCURSES_LIBS@ @WS2_LIBS@ \
+		  @MM_LIBS@ @RT_LIBS@ @MATH_LIBS@ lib/libgnu.a ccan/libccan.a sph/libsph.a
+
+sgminer_CPPFLAGS += -I$(top_builddir)/lib -I$(top_srcdir)/lib @OPENCL_FLAGS@ @LIBCURL_CFLAGS@
+
+if HAVE_WINDOWS
+sgminer_LDFLAGS += -all-static
+endif
+
+sgminer_CPPFLAGS += $(ADL_CPPFLAGS)
+
+if USE_GIT_VERSION
+GIT_VERSION      := $(shell sh -c 'git describe --abbrev=4 --dirty')
+sgminer_CPPFLAGS += -DGIT_VERSION=\"$(GIT_VERSION)\"
+endif
+
+if USE_BUILD_NUMBER
+sgminer_CPPFLAGS += -DBUILD_NUMBER=\"$(BUILD_NUMBER)\"
+endif
+
+sgminer_SOURCES := sgminer.c
+sgminer_SOURCES	+= api.c api.h
+sgminer_SOURCES	+= elist.h miner.h compat.h bench_block.h
+sgminer_SOURCES	+= util.c util.h uthash.h
+sgminer_SOURCES	+= logging.c logging.h
+sgminer_SOURCES += driver-opencl.c driver-opencl.h
+sgminer_SOURCES += ocl.c ocl.h
+sgminer_SOURCES += findnonce.c findnonce.h
+sgminer_SOURCES += adl.c adl.h adl_functions.h
+sgminer_SOURCES += pool.c pool.h
+sgminer_SOURCES += algorithm.c algorithm.h
+sgminer_SOURCES += config_parser.c config_parser.h
+sgminer_SOURCES += events.c events.h
+sgminer_SOURCES += ocl/build_kernel.c ocl/build_kernel.h
+sgminer_SOURCES += ocl/binary_kernel.c ocl/binary_kernel.h
+
+sgminer_SOURCES += kernel/*.cl
+sgminer_SOURCES += algorithm/sysendian.h
+sgminer_SOURCES += algorithm/scrypt.c algorithm/scrypt.h
+sgminer_SOURCES += algorithm/bcd.c algorithm/bcd.h
+
+bin_SCRIPTS	= $(top_srcdir)/kernel/*.cl
+
